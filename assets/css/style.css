@@ -48,6 +48,12 @@
 html {
     scroll-behavior: smooth;
 }
+.p-color {
+    color: var(--primary_color);
+}
+.d-color {
+    color: var(--default_color);
+}
 body {
     overflow-x: hidden;
     font-family: var(--primary_font);
