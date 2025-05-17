@@ -159,10 +159,10 @@ function updateSliceShow() {
     var $defaultShow, $sliceShow;
   
     if (windowWidth < 768) {
-      $defaultShow = 1;
+      $defaultShow = 15; // 1 before
       $sliceShow = 1;
     } else if (windowWidth < 992) {
-      $defaultShow = 2;
+      $defaultShow = 15; // 2 before
       $sliceShow = 2;
     } else if (windowWidth < 1200) {
       $defaultShow = 15; // 6 before
