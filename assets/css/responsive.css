@@ -792,7 +792,8 @@
     }
     .d2c_footer_wrapper img {
         margin-bottom: 30px;
-        max-height: 40px;
+        /* max-height: 40px; */
+        max-height: 63px;
     }
     .d2c_form_wrapper {
         padding-right: 0px;
