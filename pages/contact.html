@@ -118,21 +118,21 @@
                         <form class="row needs-validation" novalidate>
                             <div class="col-md-6">
                                 <label for="validationCustomFirstName" class="form-label mb-3">First Name</label>
-                                <input type="text" class="form-control" id="validationCustomFirstName" autocomplete="off" placeholder="First Name" required>
+                                <input type="text" name="first_name" class="form-control" id="validationCustomFirstName" autocomplete="off" placeholder="First Name" required />
                             </div>
                             <div class="col-md-6">
                                 <label for="validationCustomLastName" class="form-label mb-3">Last Name</label>
-                                <input type="text" class="form-control" id="validationCustomLastName" autocomplete="off" placeholder="Last Name" required>
+                                <input type="text" class="form-control" name="last_name" id="validationCustomLastName" autocomplete="off" placeholder="Last Name" required />
                             </div>
                             <div class="col-md-12">
                                 <label for="validationCustomEmail" class="form-label mb-3">Email Address</label>
                                 <div class="input-group has-validation">
-                                    <input type="email" class="form-control" id="validationCustomEmail" autocomplete="on" placeholder="Hello@mail.com" required>
+                                    <input type="email" class="form-control" name="from" id="validationCustomEmail" autocomplete="on" placeholder="Hello@mail.com" required />
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="validationCustomMessage" class="form-label mb-3">Message</label>
-                                <textarea class="form-control" rows="4" id="validationCustomMessage" placeholder="Type message here..." required></textarea>
+                                <textarea class="form-control" rows="4" name="message" id="validationCustomMessage" placeholder="Type message here..." required></textarea>
                                 <button class="btn" type="submit">Send Message</button>
                             </div>
                         </form>
@@ -226,7 +226,13 @@
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <!-- Slider JS Link -->
     <script src="../lib/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- Email JS Link -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <!-- Main JS Link -->
     <script src="../assets/js/main.js"></script>
+    
+
+
+
 </body>
 </html>

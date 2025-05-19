@@ -79,6 +79,9 @@ responsive: [
 });
 
 // Form Validation Js
+
+(function(){ emailjs.init("izPMWdBfrTL23L46R"); })();
+
 (function () {
     'use strict'
   
@@ -90,9 +93,18 @@ responsive: [
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
+          } else {
+            event.preventDefault();
+
+            emailjs.sendForm("service_mk82tgh", "template_ux1hhjs", this)
+            .then(function(response) {
+              alert("Email sent successfully!");
+              form.reset();
+            }, function(error) {
+              alert("FAILED to send email. Error: " + JSON.stringify(error));
+            });
           }
-  
-          form.classList.add('was-validated')
+          // form.classList.add('was-validated')
         }, false)
     })
 })();
@@ -209,13 +221,3 @@ function updateSliceShow() {
     load_more(".d2c_services_wrapper", ".service", ".d2c_service_btn" ,"#d2c_service_more", sliceDefault, sliceShow);
     load_more(".d2c_blog_wrapper", ".blog", ".d2c_blog_btn" ,"#d2c_blog_more", sliceDefault, sliceShow);
   });
-
-
-
-
-// Template Name: {{ReactProx- React Developer Portfolio Website Templates}}
-// Template URL: {{https://designtocodes.com/product/reactprox-react-developer-portfolio-website-templates}}
-// Description: {{Purchase your ReactProx- React Developer Portfolio and get seamless integration for react projects plus top-notch portfolio as well.}}
-// Author: DesignToCodes
-// Author URL: https://www.designtocodes.com
-// Text Domain: {{ React Prox }}
